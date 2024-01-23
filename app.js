@@ -3,6 +3,12 @@ const moment = require("moment");
 const fs = require("fs/promises");
 const cors = require("cors");
 const booksRouter = require("./routes/api/books.js");
+// const mongoose = require("mongoose");
+
+// const DB_HOST = "mongodb+srv://Oxana:oBemGbR9whNZ5Tud@cluster0.wm2gu6f.mongodb.net/books_books?retryWrites=true&w=majority"
+
+// mongoose.set('strictQuery', true);
+
 
 const app = express();
 
@@ -31,4 +37,11 @@ app.use((err, req, res, next) => {
   res.status(status).json({ message });
 });
 
+// mongoose.connect(DB_HOST)
+//     .then(() => { app.listen(3000) })
+//     .catch(error => {
+//         console.log(error.message);
+//         process.exit(1);
+//     });
 
+module.exports = app;
