@@ -2,14 +2,10 @@ const express = require("express");
 const moment = require("moment");
 const fs = require("fs/promises");
 const cors = require("cors");
+const dotenv = require("dotenv");
 const booksRouter = require("./routes/api/books.js");
-// const mongoose = require("mongoose");
 
-// const DB_HOST = "mongodb+srv://Oxana:oBemGbR9whNZ5Tud@cluster0.wm2gu6f.mongodb.net/books_books?retryWrites=true&w=majority"
-
-// mongoose.set('strictQuery', true);
-
-
+dotenv.config();
 const app = express();
 
 app.use(cors());
@@ -36,12 +32,5 @@ app.use((err, req, res, next) => {
   const { status = 500, message = "Server error" } = err;
   res.status(status).json({ message });
 });
-
-// mongoose.connect(DB_HOST)
-//     .then(() => { app.listen(3000) })
-//     .catch(error => {
-//         console.log(error.message);
-//         process.exit(1);
-//     });
 
 module.exports = app;
