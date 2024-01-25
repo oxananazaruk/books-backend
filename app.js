@@ -2,10 +2,9 @@ const express = require("express");
 const moment = require("moment");
 const fs = require("fs/promises");
 const cors = require("cors");
-const dotenv = require("dotenv");
+require("dotenv").config();
 const booksRouter = require("./routes/api/books.js");
 
-dotenv.config();
 const app = express();
 
 app.use(cors());
