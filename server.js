@@ -10,8 +10,9 @@ mongoose.set("strictQuery", true);
 mongoose
   .connect(DB_HOST)
   .then(() => {
-    app.listen(PORT);
-    console.log("Server running");
+    app.listen(PORT, () => {
+      console.log("Server running");
+    });
   })
   .catch((error) => {
     console.log(error.message);
