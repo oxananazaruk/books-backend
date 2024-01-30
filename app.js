@@ -3,7 +3,9 @@ const moment = require("moment");
 const fs = require("fs/promises");
 const cors = require("cors");
 require("dotenv").config();
+
 const booksRouter = require("./routes/api/books.js");
+const authRouter = require("./routes/api/auth");
 
 const app = express();
 
@@ -19,6 +21,7 @@ app.use(async (req, res, next) => {
   next();
 });
 
+app.use("/api/auth", authRouter);
 app.use("/api/books", booksRouter);
 
 app.use((req, res) => {

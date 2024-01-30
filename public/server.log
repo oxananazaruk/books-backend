@@ -109,3 +109,8 @@
  DELETE /api/books/65b25d21048b10242fe7b326 25-01-2024_06:24:35
  GET /api/books 25-01-2024_06:36:21
  PATCH /api/books/65b275c4da34511824aed3fc/favorite 25-01-2024_06:36:43
+ POST /api/auth/register 30-01-2024_01:10:37
+ POST /api/auth/register 30-01-2024_01:19:34
+ POST /api/auth/register 30-01-2024_01:25:36
+ POST /api/auth/register 30-01-2024_02:16:23
+ POST /api/auth/login 30-01-2024_02:48:55
