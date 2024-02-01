@@ -16,6 +16,7 @@ const bookSchema = new Schema(
       required: true,
     },
     date: { type: String, match: dataRegexp, rquired: true },
+    owner: { type: Schema.Types.ObjectId, ref: "user", required: true },
   },
   { versionKey: false, timestamps: true }
 );
