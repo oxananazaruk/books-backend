@@ -154,3 +154,16 @@
  POST /api/auth/login 01-02-2024_02:51:19
  POST /api/auth/logout 01-02-2024_02:57:28
  GET /api/books?page=1&limit=2 01-02-2024_03:00:07
+ POST /api/auth/login 05-02-2024_08:06:45
+ POST /api/auth/login 05-02-2024_08:08:08
+ POST /api/auth/login 05-02-2024_08:08:50
+ POST /api/auth/login 05-02-2024_08:09:19
+ POST /api/auth/register 05-02-2024_08:09:58
+ POST /api/auth/register 05-02-2024_08:11:36
+ POST /api/auth/login 06-02-2024_06:12:35
+ PATCH /api/auth/avatars 06-02-2024_06:27:49
+ PATCH /api/auth/avatars 06-02-2024_06:28:51
+ PATCH /api/auth/avatars 06-02-2024_06:33:30
+ PATCH /api/auth/avatars 06-02-2024_07:12:00
+ POST /api/auth/register 13-02-2024_10:04:01
+ POST /api/auth/register 13-02-2024_10:04:26

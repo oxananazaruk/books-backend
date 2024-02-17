@@ -18,7 +18,7 @@ const bookSchema = new Schema(
     date: { type: String, match: dataRegexp, rquired: true },
     owner: { type: Schema.Types.ObjectId, ref: "user", required: true },
   },
-  { versionKey: false, timestamps: true }
+  { versionKey: false, timestamps: false }
 );
 
 bookSchema.post("save", handleMongooseErr);

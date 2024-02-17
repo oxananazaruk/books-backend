@@ -9,8 +9,8 @@ const authenticate = async (req, res, next) => {
   //   console.log("req.headers: ", req.headers);
   console.log("authorization: ", authorization);
   const [bearer, token] = authorization.split(" ");
-  console.log("bearer = ", bearer);
-  console.log("token = ", token);
+  // console.log("bearer = ", bearer);
+  // console.log("token = ", token);
   if (bearer !== "Bearer") {
     next(HttpError(401));
   }
